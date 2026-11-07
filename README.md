@@ -26,7 +26,8 @@ Plataforma de animes com catálogo, links para serviços oficiais e streaming de
 - [Visão do MVP](docs/MVP.md)
 - [Arquitetura inicial](docs/ARQUITETURA.md)
 - [Decisões do produto](docs/DECISOES.md)
+- [Estrutura Flutter](docs/FLUTTER.md)
 
 ## Estado atual
 
-Projeto em fase de estruturação. Nenhuma integração de anúncios, pagamentos, streaming ou licenciamento está ativa.
+Estrutura inicial Flutter criada: tema visual, tela inicial e navegação principal. As telas de busca, lista e perfil ainda são bases demonstrativas. Nenhuma integração de anúncios, pagamentos, streaming ou licenciamento está ativa.
