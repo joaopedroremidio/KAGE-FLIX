@@ -1,18 +1,10 @@
-# Build e dependências
+node_modules/
+.next/
+out/
 build/
-.gradle/
-.idea/
-.DS_Store
-
-# Segredos e configurações locais
-.env
-.env.*
+dist/
+.vercel/
+.env*
 !.env.example
-local.properties
-*.keystore
-*.jks
-
-# Logs e temporários
+.DS_Store
 *.log
-tmp/
-temp/
