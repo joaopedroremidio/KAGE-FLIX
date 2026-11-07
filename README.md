@@ -1,33 +1,41 @@
 # Kage Flix
 
-Plataforma de animes com catálogo, links para serviços oficiais e streaming de conteúdo devidamente licenciado.
+Plataforma web de descoberta de animes, com catálogo demonstrativo, busca por título e filtros por gênero. O projeto usa Next.js e está preparado para evoluir para uma plataforma com links oficiais e, futuramente, reprodução apenas de conteúdo devidamente licenciado.
 
-**Idioma principal:** português (Brasil). A arquitetura deverá permitir adicionar outros idiomas futuramente.
+**Idioma inicial:** português do Brasil (pt-BR).  
+**Identidade visual:** preto e vermelho.  
+**Hospedagem planejada:** Vercel.
 
-## Visão do produto
+## Executar localmente
 
-- Mercado inicial: Brasil, com expansão internacional.
-- Conteúdo: animes, filmes e OVAs.
-- Plano gratuito: acesso com publicidade, sem cadastro obrigatório para explorar o catálogo.
-- Premium: assinatura para uma experiência sem anúncios.
-- Distribuição planejada: aplicativo Android, com publicação futura na Google Play.
-- Identidade visual: preto e vermelho.
+Requisitos: Node.js 20 ou superior.
 
-## Princípios
+```bash
+npm install
+npm run dev
+```
 
-1. Só disponibilizar reprodução de vídeos com autorização e licenças adequadas.
-2. Quando não houver direito de streaming, direcionar o usuário para opções oficiais.
-3. Não exigir conta para navegar no catálogo gratuito.
-4. Exigir identificação da conta para comprar e restaurar benefícios Premium.
-5. Preparar textos e conteúdo para internacionalização, mantendo português como idioma inicial.
+Abra http://localhost:3000.
 
-## Documentação
+## Scripts
 
-- [Visão do MVP](docs/MVP.md)
-- [Arquitetura inicial](docs/ARQUITETURA.md)
-- [Decisões do produto](docs/DECISOES.md)
-- [Estrutura Flutter](docs/FLUTTER.md)
+- `npm run dev`: ambiente local.
+- `npm run build`: build de produção.
+- `npm run start`: inicia o build local.
+- `npm run typecheck`: valida os tipos TypeScript.
 
 ## Estado atual
 
-Estrutura inicial Flutter criada: tema visual, tela inicial e navegação principal. As telas de busca, lista e perfil ainda são bases demonstrativas. Nenhuma integração de anúncios, pagamentos, streaming ou licenciamento está ativa.
+A interface web inicial contém navegação, apresentação, catálogo demonstrativo, busca e filtros. Os títulos e avaliações são dados de demonstração; não existe integração com catálogo externo, reprodução de vídeo, contas, anúncios ou pagamentos ativos.
+
+## Próximas etapas
+
+1. Validar build e publicação na Vercel.
+2. Integrar fonte de dados de catálogo com atribuição e uso permitido.
+3. Criar páginas de detalhes e lista pessoal.
+4. Implementar autenticação apenas quando necessária para recursos de conta.
+5. Integrar anúncios e Premium após definir fornecedores, regras e requisitos legais.
+
+## Licenciamento
+
+O Kage Flix não hospeda nem transmite conteúdo sem autorização. Disponibilidade de streaming dependerá de acordos e licenças com titulares de direitos.
