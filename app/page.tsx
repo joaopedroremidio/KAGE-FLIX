@@ -1,5 +1,7 @@
 "use client";
 
+import "./simple.css";
+
 export default function Home() {
   return (
     <>
