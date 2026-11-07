@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root{--bg:#09090b;--panel:#111114;--panel2:#18181d;--text:#f7f7f8;--muted:#9b9ba5;--red:#e5092f;--line:#26262d}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif}
+button,a{font:inherit}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer}
+::selection{background:#e5092f;color:#fff}
+.site-header{height:76px;padding:0 clamp(20px,5vw,76px);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff0d;background:#09090bf2;position:sticky;top:0;z-index:10;backdrop-filter:blur(18px)}
+.brand{font:700 25px 'Space Grotesk',sans-serif;letter-spacing:-1.4px}.brand span{color:var(--red)}
+.nav{display:flex;gap:30px;color:#b7b7bf;font-size:14px}.nav a:hover,.nav a.active{color:#fff}
+.header-actions{display:flex;align-items:center;gap:12px}.search-pill{border:1px solid var(--line);border-radius:999px;padding:10px 15px;color:#aaa;font-size:13px;background:#121216}
+.avatar{height:34px;width:34px;border-radius:50%;display:grid;place-items:center;background:#291017;color:#ff536d;font-weight:800}
+.hero{min-height:510px;padding:90px clamp(22px,8vw,120px) 70px;display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 76% 48%,#651322 0%,#260d17 23%,#100b10 52%,#09090b 76%)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#09090b 0%,#09090bdf 38%,transparent 100%),linear-gradient(0deg,#09090b 0%,transparent 28%);pointer-events:none}
+.hero-art{position:absolute;right:8%;top:9%;width:min(42vw,480px);height:390px;border:1px solid #ffffff16;border-radius:48% 48% 18% 18%;background:radial-gradient(ellipse at 50% 34%,#e84b61 0%,#7b1b30 18%,#28101a 48%,#0d0d12 73%);box-shadow:0 0 100px #e5092f24;transform:skewY(-5deg)}
+.hero-art:before{content:"影";position:absolute;inset:0;display:grid;place-items:center;color:#ffffff18;font:700 230px serif}
+.hero-content{position:relative;z-index:1;max-width:580px}.eyebrow{color:#ff526b;font-size:11px;letter-spacing:3px;font-weight:800;text-transform:uppercase}
+.hero h1{font:700 clamp(42px,6vw,72px)/.98 'Space Grotesk',sans-serif;letter-spacing:-3px;margin:18px 0}.hero h1 span{color:var(--red)}.hero p{max-width:440px;color:#b5b1b7;line-height:1.7;font-size:15px}
+.hero-buttons{display:flex;gap:12px;margin-top:28px}.primary-btn,.secondary-btn{border:0;border-radius:7px;padding:13px 20px;font-weight:700;font-size:13px}.primary-btn{background:var(--red);color:#fff}.primary-btn:hover{background:#ff2146}.secondary-btn{background:#ffffff13;color:#fff;border:1px solid #ffffff20}
+.content{padding:12px clamp(20px,5vw,76px) 70px;max-width:1500px;margin:auto}.section-head{display:flex;justify-content:space-between;align-items:end;margin:34px 0 18px}.section-head h2{font:700 23px 'Space Grotesk',sans-serif;margin:0}.section-head p{margin:5px 0 0;color:var(--muted);font-size:12px}.see-all{color:#ff536d;font-size:12px;font-weight:700}
+.filters{display:flex;gap:9px;flex-wrap:wrap;margin:18px 0 22px}.filter{border:1px solid var(--line);background:#111114;color:#aaa;border-radius:999px;padding:8px 14px;font-size:12px}.filter.selected,.filter:hover{background:#321019;border-color:#8e1b31;color:#fff}
+.anime-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}.anime-card{min-width:0}.poster{height:235px;border-radius:9px;position:relative;overflow:hidden;background:var(--poster);display:flex;align-items:end;padding:15px;isolation:isolate;transition:transform .2s}.poster:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 25%,#050507dd 100%);z-index:-1}.poster:after{content:attr(data-mark);position:absolute;top:10px;right:13px;font:700 76px 'Space Grotesk',sans-serif;color:#ffffff25;z-index:-1}.anime-card:hover .poster{transform:translateY(-4px)}.poster-tag{position:absolute;top:11px;left:11px;background:#e5092f;color:white;font-size:9px;font-weight:800;padding:5px 7px;border-radius:3px;letter-spacing:.7px}.poster-title{font:700 20px/1 'Space Grotesk',sans-serif;text-shadow:0 2px 12px #000}.anime-meta{display:flex;justify-content:space-between;color:var(--muted);font-size:11px;margin-top:10px}.anime-name{font-size:13px;font-weight:700;margin-top:7px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.premium{margin:65px 0 10px;border:1px solid #692033;border-radius:12px;padding:28px 32px;background:linear-gradient(105deg,#260d16,#151014 58%,#100d11);display:flex;align-items:center;justify-content:space-between;gap:20px}.premium h3{font:700 22px 'Space Grotesk',sans-serif;margin:0 0 7px}.premium p{margin:0;color:#b7aab0;font-size:13px}.premium strong{color:#ff526b}
+.footer{border-top:1px solid var(--line);padding:25px clamp(20px,5vw,76px);color:#777;font-size:11px;display:flex;justify-content:space-between;gap:15px}
+.empty{grid-column:1/-1;border:1px dashed var(--line);padding:38px;text-align:center;color:var(--muted);border-radius:10px}
+@media(max-width:1000px){.anime-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero-art{right:-4%;opacity:.7}.nav{gap:16px}}
+@media(max-width:650px){.site-header{height:64px;padding:0 17px}.brand{font-size:22px}.nav{display:none}.search-pill{padding:8px 11px}.hero{min-height:460px;padding:75px 22px 60px}.hero-art{width:290px;height:300px;right:-115px;top:17%;opacity:.4}.hero:after{background:linear-gradient(90deg,#09090b 0%,#09090be8 58%,#09090b55 100%),linear-gradient(0deg,#09090b 0%,transparent 35%)}.hero h1{letter-spacing:-2px}.content{padding:4px 17px 45px}.anime-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.poster{height:205px}.premium{padding:23px;align-items:flex-start;flex-direction:column}.footer{flex-direction:column}.section-head h2{font-size:20px}}
